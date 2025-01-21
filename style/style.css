@@ -371,7 +371,7 @@ footer .logos img {
 }
 @media screen and (max-width: 800px) {
   .spacing {
-    padding: 10px 30px;
+    padding: 10px 30px ;
   }
   nav ul {
     display: none;
