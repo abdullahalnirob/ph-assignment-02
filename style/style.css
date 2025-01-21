@@ -361,6 +361,98 @@ footer .logos {
 footer .logos img {
   cursor: pointer;
 }
- @media screen and (max-width:800px) {
-  
- }
+
+/* hidden */
+.menu {
+  display: none;
+}
+.res {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .spacing {
+    padding: 10px 30px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav button {
+    display: none;
+  }
+  .menu {
+    display: block;
+    font-size: 30px;
+  }
+  nav .logo span {
+    display: none;
+  }
+  nav .logo {
+    width: 190px;
+  }
+  .hero-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .curriculume {
+    height: auto;
+  }
+  .curriculume .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .big-card {
+    display: none;
+  }
+  .stories {
+    height: auto;
+  }
+  .two-side {
+    display: unset;
+  }
+  .stories .cards {
+    width: auto;
+    /* padding: 10px; */
+    margin: 10px;
+    gap: 7px;
+  }
+  .stories .cards .card {
+    width: unset;
+    height: auto;
+  }
+  .res {
+    display: block;
+  }
+  .stories .cards .card h2 {
+    font-size: 16px;
+  }
+  footer {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+    justify-content: unset;
+  }
+  footer .head-li {
+    margin-top: 10px;
+  }
+  .small-baj {
+    padding: 5px;
+    font-size: 16px;
+    background-color: greenyellow;
+    color: #fff;
+    border-radius: 100000px;
+    position: relative;
+    left: 0;
+    text-align: center;
+    bottom: 20px;
+    width: 150px;
+  }
+  .hero-page .left-side h1,
+  span {
+    font-size: 40px;
+  }
+  .hero-page .right-side img {
+    width: 80%;
+  }
+}
