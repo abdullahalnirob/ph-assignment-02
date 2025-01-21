@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", serif;
+  font-weight: 500;
+}
+:root {
+  --brown: #ffa200;
+  --dark: #000;
+  --dep-brown: #ee9700;
+  --light-dark: #222;
+}
+button {
+  cursor: pointer;
+}
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #fff;
+}
+.spacing {
+  padding: 10px 100px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+nav .logo img {
+  width: 30%;
+}
+nav .logo span {
+  font-size: 23px;
+  font-weight: 700;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+nav ul li {
+  padding: 10px 13px;
+  font-size: 20px;
+  list-style: none;
+  cursor: pointer;
+}
+nav ul .li-1 {
+  color: var(--brown);
+}
+nav ul .li-2 {
+  color: #1bbeff;
+}
+nav ul .li-3 {
+  color: aqua;
+}
+nav ul .li-4 {
+  color: rgb(164, 0, 164);
+}
+nav button {
+  padding: 10px 30px;
+  background-color: var(--brown);
+  border: 0;
+  font-size: 20px;
+  color: white;
+  border-radius: 12px;
+  transition: 0.2s ease-in-out;
+}
+nav button:hover {
+  background-color: var(--dep-brown);
+}
+
+/* Hero page */
+.hero-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-page .center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.hero-page .left-side h1,
+span {
+  font-size: 55px;
+  font-weight: 900;
+}
+.hero-page .left-side p {
+  margin: 16px 0;
+}
+.hero-page .left-side button {
+  padding: 10px 50px;
+  background-color: var(--dark);
+  border: 0;
+  font-size: 20px;
+  color: white;
+  border-radius: 12px;
+  transition: 0.2s ease-in-out;
+}
+.hero-page .left-side button:hover {
+  background-color: var(--light-dark);
+}
+.hero-page .right-side img {
+  width: 100%;
+}
+
+/* curriculume */
+.curriculume {
+  background-image: url(../assets/bg.png);
+  height: 100vh;
+  margin: 100px 0;
+}
+.curriculume h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.curriculume .cards {
+  display: grid;
+  grid-template-columns: 200px ;
+}
