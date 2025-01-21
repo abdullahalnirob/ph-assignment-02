@@ -126,5 +126,30 @@ span {
 
 .curriculume .cards {
   display: grid;
-  grid-template-columns: 200px ;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.curriculume .cards .card {
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  /* background: linear-gradient(to bottom, #e3f4ff, #ffffff, #ffffff); */
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.curriculume .cards .card-1 {
+  background: linear-gradient(to bottom, #e3f4ff, #ffffff, #ffffff);
+}
+.curriculume .cards .card-2 {
+  background: linear-gradient(to bottom, #ffe3e3, #ffffff, #ffffff);
+}
+.curriculume .cards .card-3 {
+  background: linear-gradient(to bottom, #d5d5d5, #ffffff, #ffffff);
+}
+.curriculume .cards .card img {
+  max-width: 100px;
+  height: auto;
 }
