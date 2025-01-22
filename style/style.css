@@ -23,6 +23,9 @@ body {
   padding: 10px 100px;
 }
 nav {
+  padding: 10px 100px;
+}
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -369,9 +372,22 @@ footer .logos img {
 .res {
   display: none;
 }
+.line {
+  display: none;
+}
 @media screen and (max-width: 800px) {
   .spacing {
-    padding: 10px 30px ;
+    padding: 10px 30px;
+  }
+
+  .line {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #ffa200;
+  }
+  nav {
+    padding: 10px 30px;
   }
   nav ul {
     display: none;
@@ -381,22 +397,26 @@ footer .logos img {
   }
   .menu {
     display: block;
-    font-size: 30px;
+    font-size: 26px;
   }
   nav .logo span {
     display: none;
   }
   nav .logo {
-    width: 190px;
+    width: 150px;
   }
   .hero-page {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     flex-direction: column-reverse;
   }
   .curriculume {
     height: auto;
+  }
+  .curriculume h1 {
+    font-size: 30px;
   }
   .curriculume .cards {
     grid-template-columns: repeat(1, 1fr);
@@ -448,9 +468,12 @@ footer .logos img {
     bottom: 20px;
     width: 150px;
   }
+  .hero-page .left-side {
+    margin-top: 30px;
+  }
   .hero-page .left-side h1,
   span {
-    font-size: 40px;
+    font-size: 30px;
   }
   .hero-page .right-side img {
     width: 80%;
